@@ -92,7 +92,7 @@ article {
     border: 1px solid #000;
 	padding: 0.1rem;
 }
-article img {
+.hero article img {
     float: right;
     width: 150px;
     height: auto;
