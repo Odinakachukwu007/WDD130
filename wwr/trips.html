@@ -1,51 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Choose from a variety of white water rafting trips with our experienced guides. Book your trip today!">
-    <title>White Water Rafting Co. - Trips</title>
-    <link rel="stylesheet" href="style/trips.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rafting Site Trips Page | Prosper Anosike Odinakachukwu</title>
+    <meta name="description" content="White Water Rafting Company Trips Page.">
+    <meta name="author" content="Prosper Anosike">
+    <link rel="stylesheet" href="styles/trips.css" >
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="trips.html">Trips</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <header>
+            <img src="images/logo.png" alt="Rafting Site Logo">
+            <nav>
+                <a href="https://odinakachukwu007.github.io/wdd130/index.html">Home</a>
+                <a href="https://odinakachukwu007.github.io/wdd130/wwr/about.html">About Us</a>
+                <a href="https://odinakachukwu007.github.io/wdd130/wwr/trips.html">Trips</a>
+                <a href="https://odinakachukwu007.github.io/wdd130/wwr/contact.html">Contact Us</a>
+            </nav>
+      </header>
+      <main>
+            <section class="calltoaction">
+                    <div class="attentionarea">
+                        <img src="images/tripsbackground.jpg" alt="Background rafting image">
+                        <h1>Hurry and Book Now!!!</h1>
+                    </div>
+                    <div class="bookinginfo">
+                        <p>
+                            Your reservations can be made here online and over the phone at (303)-123-4567.
+                            Please allow us at least 48 hours in advanced to assure that your booking is confirmed
+                            and scheduled. Thank you for your business. 
+                        </p>
+                    </div>
+                    <button type="submit" name="allbookings" id="allbookings">Book Now</button>
+            </section>
+            <hr>
+            <section class="trips">
+                <h2>All Day Trips</h2>
+                <div class="alldaytrips">
+                    <div class="trip1">
+                        <figure>
+                            <img src="images/trips1.jpg" alt="Rafting image 1">
+                            <figcaption>1 Day Trip</figcaption>
+                        </figure>
+                        <button type="submit" name="submit1" id="submit1">Book Now</button>
+                    </div>
+                    <div class="trip2">
+                        <figure>
+                            <img src="images/trips2.jpg" alt="Rafting image 2">
+                            <figcaption>2 Day Trip</figcaption>
+                        </figure>
+                        <button type="submit" name="submit2" id="submit2">Book Now</button>
+                    </div>
+                    <div class="trip3">
+                        <figure>
+                            <img src="images/trips3.jpg" alt="Rafting image 3">
+                            <figcaption>3 Day Trip</figcaption>
+                        </figure>
+                        <button type="submit" name="submit3" id="submit3">Book Now</button>
+                    </div>
+                </div>
+                <h2>1/2 Day Trips</h2>
+                <div class="halfdaytrips">
+                    <div class="trip4">
+                        <figure>
+                        <img src="images/trips4.jpg" alt="Rafting image 4">
+                        <figcaption>3 Hour Trip</figcaption>
+                        </figure>
+                        <button type="submit" name="submit4" id="submit4">Book Now</button>
+                    </div>
+                    <div class="trip5">
+                        <figure>
+                        <img src="images/trips5.jpg" alt="Rafting image 5">
+                        <figcaption>6 Hour Trip</figcaption>
+                        </figure>
+                        <button type="submit" name="submit5" id="submit5">Book Now</button>
+                    </div>
+                </div>
+            </section>
+      </main>
+  <footer>
+      <p>©2023 🕊️ White Water Rafting 🕊️ Prosper Anosike Odinakachukwu</p>
+      <nav class="socialmedia">
+          <a href="https://www.facebook.com/">
+              <img src="images/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/">
+              <img src="images/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://twitter.com/">
+              <img src="images/twitter.svg" alt="Twitter">
+          </a>
+          <a href="https://app.moqups.com/UcKhCGiL5dsSAInThfxwphPoaDKH2O97/edit/page/a48d46590">
+              <img src="images/moqups.svg" alt="Moqups">
+          </a>
       </nav>
-    </header>
-    <main>
-      <section class="trips-list">
-        <h1>Choose Your Adventure</h1>
-        <div class="trip-card">
-          <img src="trip1.jpg" alt="Trip 1">
-          <h2>Trip 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget sem nec lectus auctor aliquet. Sed id leo odio.</p>
-          <p class="price">$300 per person</p>
-          <a href="#" class="cta disabled">Sold Out</a>
-        </div>
-        <div class="trip-card">
-          <img src="trip2.jpg" alt="Trip 2">
-          <h2>Trip 2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget sem nec lectus auctor aliquet. Sed id leo odio.</p>
-          <p class="price">$400 per person</p>
-          <a href="booking.html" class="cta">Book Now</a>
-        </div>
-        <div class="trip-card">
-          <img src="trip3.jpg" alt="Trip 3">
-          <h2>Trip 3</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget sem nec lectus auctor aliquet. Sed id leo odio.</p>
-          <p class="price">$500 per person</p>
-          <a href="booking.html" class="cta">Book Now</a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 White Water Rafting Co. All rights reserved.</p>
-    </footer>
+  </footer>
   </body>
 </html>
