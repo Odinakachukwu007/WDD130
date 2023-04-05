@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap');
+
 :root {
     --primary-color: #ffffff;
     --secondary-color: #66614d;
     --accent1-color: #d8dbdb;
     --accent2-color: #FFC847;
 
-    --heading-font:'Poppins', sans-serif;
-    --paragraph-font:'Didact Gothic', sans-serif;
+    --heading-font: 'Tilt Prism', serif;
+    --paragraph-font: 'Shantell Sans', serif;
 
     --nav-background-color: #A62639;
     --nav-link-color: #4c1eb8;
