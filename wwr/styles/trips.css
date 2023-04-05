@@ -2,18 +2,18 @@
 
 
 :root {
-    --primary-color: #DCE1E9;
-    --secondary-color: #8FC3CB;
-    --accent1-color: #1A1A80;
-    --accent2-color: #0F0636;
-  
-    --heading-font: 'Tilt Prism', serif;
-    --paragraph-font: 'Shantell Sans', serif;
-  
-    --nav-background-color: #1A1A80;
-    --nav-link-color: #8FC3CB;
-    --nav-hover-link-color: #0F0636;
-    --nav-hover-background-color: #DCE1E9;   
+    --primary-color: #ffffff;
+    --secondary-color: #66614d;
+    --accent1-color: #d8dbdb;
+    --accent2-color: #FFC847;
+
+    --heading-font:'Poppins', sans-serif;
+    --paragraph-font:'Didact Gothic', sans-serif;
+
+    --nav-background-color: #A62639;
+    --nav-link-color: #4c1eb8;
+    --nav-hover-link-color: #a6faf3;
+    --nav-hover-background-color: #A62639;   
 }
 
 
