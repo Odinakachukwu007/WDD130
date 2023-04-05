@@ -1,89 +1,217 @@
-* { trips } *
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap');
+
+
+:root {
+    --primary-color: #DCE1E9;
+    --secondary-color: #8FC3CB;
+    --accent1-color: #1A1A80;
+    --accent2-color: #0F0636;
+  
+    --heading-font: 'Tilt Prism', serif;
+    --paragraph-font: 'Shantell Sans', serif;
+  
+    --nav-background-color: #1A1A80;
+    --nav-link-color: #8FC3CB;
+    --nav-hover-link-color: #0F0636;
+    --nav-hover-background-color: #DCE1E9;   
+}
+
+
+*, footer, main, body, header {
+    max-width: 1080px;
+	margin: 1rem auto;
+    padding: 0;
+}
+
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
 }
+
 
 header {
-  background-color: #004d99;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+    background-color: var(--accent1-color);
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: 35% 65%;
+    padding: 1rem;
+    gap: 1em;
+    border: 2px solid var(--primary-color);
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
+
+p {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
 }
 
-nav ul li {
-  margin: 0 10px;
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    font-size: 3em;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2.25rem;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+
+.calltoaction img {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: auto;
 }
 
-main {
-  margin: 20px;
+
+.calltoaction h1 {
+    position: absolute;
+    top: 500px;
+    opacity: .7;
 }
 
-/* Trips page specific styles */
 
-.trips-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.bookinginfo p {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 2rem;
 }
 
-.trip-card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px;
-  padding: 10px;
+
+button[id="allbookings"] {
+    display: flex;
+    justify-content: center;
 }
 
-.trip-card img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
+hr {
+    color: var(--accent2-color);
+    background-color: var(--accent2-color);
+    height: .1rem;
 }
 
-.trip-card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 2em;
+    text-decoration: underline;
 }
 
-.trip-card p {
-  margin-bottom: 10px;
+h3 {
+    display: flex;
+    align-items: center;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 2em;
+    text-decoration: underline;
 }
 
-.trip-card .price {
-  font-weight: bold;
+.trips img {
+    width: 275px;
+    height: auto;
 }
 
-.trip-card .cta {
-  background-color: #004d99;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: block;
-  margin-top: 10px;
-  text-align: center;
+
+.alldaytrips {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    align-items: center;
 }
 
-.trip-card .cta:hover {
-  background-color: #0066cc;
+
+.halfdaytrips {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
 }
 
-.trip-card .disabled {
-  background-color: #ccc;
-  pointer-events: none;
+figure {
+    display: block;
+    text-align: center;
+}
+
+
+nav {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+
+
+nav a {
+    display: flex;
+    color: var(--nav-link-color);
+    text-decoration: none;
+  }
+
+
+.socialmedia {
+    display: flex;
+}
+
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-background-color);
+}
+
+
+nav a:hover {    
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    height: fit-content;
+}
+
+
+footer {
+	border-top: 4px solid var(--accent2-color);
+	color: navy;
+	font-weight: 700;
+	font-style: italic;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+
+} 
+
+
+footer p {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+
+.socialmedia img {
+    display: flex;
+    justify-content: space-around;
+    width: 32%;
+    height: auto;
+}
+
+
+
+button {
+    display: flex; 
+    justify-content: center;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
 }
